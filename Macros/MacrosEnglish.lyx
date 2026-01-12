@@ -1,126 +1,26 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-% Necessary Commands:
-\usepackage{autobreak}
-\usepackage{relsize}
-% Set vertical space before and after dislpay equations to be longer for better redability:
-\AtBeginDocument{\setlength\abovedisplayskip{12pt}}
-\AtBeginDocument{\setlength\belowdisplayskip{12pt}}
-\AtBeginDocument{\setlength\belowdisplayshortskip{12pt}}
-\AtBeginDocument{\setlength\belowdisplayshortskip{12pt}}
-
-
-% Emlarge the distance between rows of equations in \align enviorment
-\setlength{\jot}{10pt}
-
-% Set space between words to be wider:
-\spaceskip=1.3\fontdimen2\font plus 1\fontdimen3\font minus 1.5\fontdimen4\font
-
-% Convert the Lyx colors into more pleasent colors:
-\usepackage{xcolor}
-\definecolor{blue}{RGB}{12,97,197}
-\definecolor{green}{RGB}{0,128,40}
-\definecolor{red}{RGB}{235,16,16}
-\definecolor{brown}{RGB}{154,58,0}
-\definecolor{orange}{RGB}{231,135,26}
-\definecolor{purple}{RGB}{94,53,177}
-
-% Convert the QED Symbol at the end of proofs to a solid black square (credit: Yakir Oz):
-\usepackage{amssymb}
-\renewcommand{\qedsymbol}{$\blacksquare$}
-
-% Make the layout more similar to Hebrew Article, which I am more used to:
-\renewcommand*{\@seccntformat}[1]{\hspace{0.5cm}\csname the#1\endcsname\hspace{0.5cm}} 
-\usepackage{titlesec}
-\titleformat{\section}{\fontsize{20}{20}\bfseries}{\thesection}{10pt}{}
-\titleformat{\subsection}{\fontsize{15}{15}\bfseries}{\thesubsection}{10pt}{}
-\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{10pt}{}
-
-% Create disjoint union symbols:
-\makeatletter
-\def\moverlay{\mathpalette\mov@rlay}
-\def\mov@rlay#1#2{\leavevmode\vtop{%
-   \baselineskip\z@skip \lineskiplimit-\maxdimen
-   \ialign{\hfil$\m@th#1##$\hfil\cr#2\crcr}}}
-\newcommand{\charfusion}[3][\mathord]{
-    #1{\ifx#1\mathop\vphantom{#2}\fi
-        \mathpalette\mov@rlay{#2\cr#3}
-      }
-    \ifx#1\mathop\expandafter\displaylimits\fi}
-\makeatother
-\newcommand{\cupdot}{\charfusion[\mathbin]{\cup}{\cdot}}
-\newcommand{\bigcupdot}{\charfusion[\mathop]{\bigcup}{\cdot}}
-
-\newcommand{\kaliLargeLand}{\mathop{\mathlarger{\mathlarger{\mathlarger{\land}}}}}
-
-\newcommand{\indep}{\perp \!\!\! \perp}
-\end_preamble
 \use_default_options true
-\begin_modules
-theorems-ams
-\end_modules
-\maintain_unincluded_children false
-\begin_local_layout
-Style Section
-	Font
-	  Series     Medium
-	  Shape      Smallcaps
-	  Size       Larger
-	  Series     Bold
-	EndFont
-	TocLevel 1
-End
-
-
-Style Section*
-	Font
-	  Series     Medium
-	  Shape      Smallcaps
-	  Size      Larger
-	  Series     Bold
-	EndFont
-End
-
-
-Style Solution
-
-	LabelString           "פיתרון: "
-End
-
-
-Style Notation
-
-	LabelString           "סימון  \thetheorem: "
-End
-
-Style Theorem
-
-	LabelString           "משפט \thetheorem: "
-End
-
-Style Property
-
-	LabelString           "תזכורת: "
-End
-\end_local_layout
-\language english
+\maintain_unincluded_children no
+\language american
 \language_package default
-\inputencoding auto
-\fontencoding global
-\font_roman "default" "David"
-\font_sans "default" "David"
-\font_typewriter "default" "David"
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
-\use_non_tex_fonts true
+\use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -130,20 +30,12 @@ End
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize default
-\spacing onehalf
-\use_hyperref true
-\pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
-\pdf_bookmarksopenlevel 1
-\pdf_breaklinks false
-\pdf_pdfborder false
-\pdf_colorlinks false
-\pdf_backref false
-\pdf_pdfusetitle true
+\use_hyperref false
 \papersize default
-\use_geometry true
+\use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -156,29 +48,23 @@ End
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 1cm
-\topmargin 2cm
-\rightmargin 1cm
-\bottommargin 3cm
-\headheight 0cm
-\headsep 0cm
-\footskip 2cm
-\secnumdepth -2
+\secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\paragraph_indentation 0bp
+\paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
 \quotes_style english
@@ -186,16 +72,23 @@ End
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kalivectormultiplication}[6]{\left[\begin{matrix}#1\\
  #2\\
@@ -223,6 +116,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliseries}[3]{#1_{1}#2#1_{2}#2\ldots#2#1_{#3}}
 {#1_{1}#2#1_{2}#2\ldots#2#1_{#3}}
@@ -232,6 +127,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliseriesZero}[3]{#1_{0}#2#1_{1}#2\ldots#2#1_{#3}}
 {#1_{0}#2#1_{1}#2\ldots#2#1_{#3}}
@@ -241,6 +138,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kalidoubleseries}[5]{#1_{1}#2#3_{1}#4#1_{2}#2#3_{2}#4\ldots#1_{#5}#2#3_{#5}}
 {#1_{1}#2#3_{1}#4#1_{2}#2#3_{2}#4\ldots#1_{#5}#2#3_{#5}}
@@ -250,6 +149,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kalidoubleseriesZero}[5]{#1_{0}#2#3_{0}#4#1_{1}#2#3_{1}#4\ldots#1_{#5}#2#3_{#5}}
 {#1_{0}#2#3_{0}#4#1_{1}#2#3_{1}#4\ldots#1_{#5}#2#3_{#5}}
@@ -259,6 +160,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliOverset}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
@@ -268,6 +171,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliUnderset}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
@@ -277,6 +182,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\an}[1]{\left(#1\right)_{n=1}^{\infty}}
 {\left(#1\right)_{n=1}^{\infty}}
@@ -286,6 +193,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kalim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
 {\lim_{n\rightarrow\infty}\left(#1\right)}
@@ -295,6 +204,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\flim}[2]{\lim_{x\rightarrow#2}\left(#1\right)}
 {\lim_{x\rightarrow#2}\left(#1\right)}
@@ -304,6 +215,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliCupDot}{\mathbin{\cupdot}}
 {\mathbin{\dot{\cup}}}
@@ -313,6 +226,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
 {\mathbin{\dot{\bigcup}}}
@@ -322,6 +237,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliNabla}{\overline{\nabla}}
 {\overline{\nabla}}
@@ -331,6 +248,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliTauEquiv}{\equiv_{\text{tau}}}
 {\equiv_{\text{tau}}}
@@ -340,6 +259,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliV}{\textcolor{green}{\checkmark}}
 {\textcolor{green}{\checkmark}}
@@ -349,6 +270,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliX}{{\color{red}\boldsymbol{\times}}}
 {{\color{red}\boldsymbol{\times}}}
@@ -358,6 +281,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliFourier}{\mathcal{F}}
 {\mathcal{F}}
@@ -367,6 +292,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kalaplace}{\mathcal{L}}
 {\mathcal{L}}
@@ -376,6 +303,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliHemiltonian}{\mathcal{H}}
 {\mathcal{H}}
@@ -385,6 +314,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliPowerSet}{\mathcal{P}}
 {\mathcal{P}}
@@ -394,6 +325,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliABasis}{\mathcal{A}}
 {\mathcal{A}}
@@ -403,6 +336,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliBBasis}{\mathcal{B}}
 {\mathcal{B}}
@@ -412,6 +347,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliOBasis}{\mathcal{O}}
 {\mathcal{O}}
@@ -421,6 +358,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliCBasis}{\mathcal{C}}
 {\mathcal{C}}
@@ -430,6 +369,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliMBasis}{\mathcal{M}}
 {\mathcal{M}}
@@ -439,6 +380,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliNBasis}{\mathcal{N}}
 {\mathcal{N}}
@@ -448,6 +391,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliInteractionHamiltonian}{\mathcal{V}}
 {\mathcal{V}}
@@ -457,6 +402,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliTestStatistic}{\mathcal{T}}
 {\mathcal{T}}
@@ -466,6 +413,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliFancyF}{\mathscr{F}}
 {\mathscr{F}}
@@ -475,6 +424,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliFancyB}{\mathscr{B}}
 {\mathscr{B}}
@@ -484,6 +435,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliForall}{\mathbin{\forall}}
 {\mathbin{\forall}}
@@ -493,6 +446,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliExists}{\mathbin{\exists}}
 {\mathbin{\exists}}
@@ -502,6 +457,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliField}{\mathbb{F}}
 {\mathbb{F}}
@@ -511,6 +468,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliComplex}{\mathbb{C}}
 {\mathbb{C}}
@@ -520,6 +479,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliReal}{\mathbb{R}}
 {\mathbb{R}}
@@ -529,6 +490,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliRational}{\mathbb{Q}}
 {\mathbb{Q}}
@@ -538,6 +501,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliNatural}{\mathbb{N}}
 {\mathbb{N}}
@@ -547,6 +512,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliInteger}{\mathbb{Z}}
 {\mathbb{Z}}
@@ -556,6 +523,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliProbability}{\mathbb{P}}
 {\mathbb{P}}
@@ -565,6 +534,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliExpectedValue}{\mathbb{E}}
 {\mathbb{E}}
@@ -574,6 +545,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliUnitOperator}{\mathbb{I}}
 {\mathbb{I}}
@@ -583,6 +556,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliHbb}{\mathbb{H}}
 {\mathbb{H}}
@@ -592,6 +567,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliGothica}{\mathfrak{a}}
 {\mathfrak{a}}
@@ -601,6 +578,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliGothicb}{\mathfrak{b}}
 {\mathfrak{b}}
@@ -610,6 +589,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliGothicc}{\mathfrak{c}}
 {\mathfrak{c}}
@@ -619,33 +600,37 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
-\newcommand{\kaliRank}{\text{Rank}}
-{\text{Rank}}
+\newcommand{\Rank}[1]{\operatorname{Rank}\left( #1 \right)}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\kaliIm}{\text{Im}}
-{\text{Im}}
+
+\lang english
+\begin_inset Formula $\newcommand{\Im}[1]{\operatorname{Im}\left( #1 \right)}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
-\newcommand{\kaliSpan}{\text{Span}}
-{\text{Span}}
+\newcommand{\Span}[1]{\operatorname{Span}\left( #1 \right)}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliTr}{\text{Tr}}
 {\text{Tr}}
@@ -655,6 +640,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliSg}{\text{sg}}
 {\text{sg}}
@@ -664,6 +651,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliOrd}{\text{Ord}}
 {\text{Ord}}
@@ -673,6 +662,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliOtp}{\text{otp}}
 {\text{otp}}
@@ -682,6 +673,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliWo}{\text{WO}}
 {\text{WO}}
@@ -691,6 +684,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliCard}{\text{Card}}
 {\text{Card}}
@@ -700,6 +695,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliCf}{\text{cf}}
 {\text{cf}}
@@ -709,6 +706,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliSupp}{\text{Supp}}
 {\text{Supp}}
@@ -718,6 +717,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliGeo}{\text{Geo}}
 {\text{Geo}}
@@ -727,6 +728,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliBin}{\text{Bin}}
 {\text{Bin}}
@@ -736,6 +739,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliBer}{\text{Ber}}
 {\text{Ber}}
@@ -745,6 +750,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliPoi}{\text{Poi}}
 {\text{Poi}}
@@ -754,6 +761,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliExp}{\text{Exp}}
 {\text{Exp}}
@@ -763,6 +772,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliCov}{\text{Cov}}
 {\text{Cov}}
@@ -772,6 +783,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliVar}{\text{Var}}
 {\text{Var}}
@@ -781,6 +794,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliSinc}{\text{sinc}}
 {\text{sinc}}
@@ -790,6 +805,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliCirc}{\text{circ}}
 {\text{circ}}
@@ -799,6 +816,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliRect}{\text{rect}}
 {\text{rect}}
@@ -808,6 +827,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliErf}{\text{erf}}
 {\text{erf}}
@@ -817,6 +838,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliDom}{\text{dom}}
 {\text{dom}}
@@ -826,6 +849,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliRange}{\text{range}}
 {\text{range}}
@@ -835,6 +860,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliId}{\text{Id}}
 {\text{Id}}
@@ -844,6 +871,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliSeq}{\text{Seq}}
 {\text{Seq}}
@@ -853,6 +882,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliAlg}{\text{Alg}}
 {\text{Alg}}
@@ -862,6 +893,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliTrace}{\text{Tr}}
 {\text{Tr}}
@@ -871,6 +904,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliSent}{\text{sent}}
 {\text{sent}}
@@ -880,6 +915,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliConst}{\text{Const}}
 {\text{Const}}
@@ -889,6 +926,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliConstTerm}{\text{constterm}}
 {\text{constterm}}
@@ -898,6 +937,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliRel}{\text{Rel}}
 {\text{Rel}}
@@ -907,6 +948,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliFunc}{\text{Func}}
 {\text{Func}}
@@ -916,6 +959,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliTerm}{\text{term}}
 {\text{term}}
@@ -925,6 +970,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliAtom}{\text{atom}}
 {\text{atom}}
@@ -934,6 +981,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliForm}{\text{form}}
 {\text{form}}
@@ -943,6 +992,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliAssign}{\text{assign}}
 {\text{assign}}
@@ -952,6 +1003,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliInd}{\text{ind}}
 {\text{ind}}
@@ -961,6 +1014,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliTh}{\text{Th}}
 {\text{Th}}
@@ -970,6 +1025,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliAxLog}{\text{AxLog}}
 {\text{AxLog}}
@@ -979,6 +1036,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliConclusion}{\text{cl}}
 {\text{cl}}
@@ -988,6 +1047,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliRes}{\text{Res}}
 {\text{Res}}
@@ -997,6 +1058,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliGL}{\text{GL}}
 {\text{GL}}
@@ -1006,6 +1069,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliSL}{\text{SL}}
 {\text{SL}}
@@ -1015,6 +1080,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliLcm}{\text{lcm}}
 {\text{lcm}}
@@ -1024,6 +1091,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliAut}{\text{Aut}}
 {\text{Aut}}
@@ -1033,6 +1102,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliSyl}{\text{Syl}}
 {\text{Syl}}
@@ -1042,6 +1113,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliChar}{\mathop{\text{char}}}
 {\mathop{\text{char}}}
@@ -1051,6 +1124,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliTor}{\text{tor}}
 {\text{tor}}
@@ -1060,6 +1135,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliIndependent}{\indep}
 {\tilde{\perp}}
@@ -1069,6 +1146,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\pv}[1]{{\color{violet}\left({\normalcolor #1}\right)}}
 {{\color{violet}\left({\normalcolor #1}\right)}}
@@ -1078,6 +1157,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\pr}[1]{{\color{red}\left({\normalcolor #1}\right)}}
 {{\color{red}\left({\normalcolor #1}\right)}}
@@ -1087,6 +1168,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\pb}[1]{{\color{blue}\left({\normalcolor #1}\right)}}
 {{\color{blue}\left({\normalcolor #1}\right)}}
@@ -1096,6 +1179,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\pg}[1]{{\color{green}\left({\normalcolor #1}\right)}}
 {{\color{green}\left({\normalcolor #1}\right)}}
@@ -1105,6 +1190,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\pn}[1]{{\color{brown}\left({\normalcolor #1}\right)}}
 {{\color{brown}\left({\normalcolor #1}\right)}}
@@ -1114,6 +1201,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\pt}[1]{{\color{teal}\left({\normalcolor #1}\right)}}
 {{\color{teal}\left({\normalcolor #1}\right)}}
@@ -1123,6 +1212,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\pl}[1]{{\color{olive}\left({\normalcolor #1}\right)}}
 {{\color{olive}\left({\normalcolor #1}\right)}}
@@ -1132,6 +1223,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\pp}[1]{{\color{purple}\left({\normalcolor #1}\right)}}
 {{\color{purple}\left({\normalcolor #1}\right)}}
@@ -1141,6 +1234,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\py}[1]{{\color{gray}\left({\normalcolor #1}\right)}}
 {{\color{gray}\left({\normalcolor #1}\right)}}
@@ -1150,6 +1245,8 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliIdMatrix}{\mathds{1}}
 {\mathds{1}}
@@ -1159,8 +1256,40 @@ End
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset FormulaMacro
 \newcommand{\kaliParity}{\mathcal{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\Set}[1]{\left\{  #1 \right\} }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\Abs}[1]{\left| #1 \right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\Ker}[1]{\operatorname{Ker}\left( #1 \right)}
 \end_inset
 
 

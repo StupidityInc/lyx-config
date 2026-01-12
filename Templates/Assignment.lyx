@@ -608,7 +608,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/uri/Downloads/TAULogo_Eng_.png
+	filename /home/uri/lyx-config/Sources/TAULogo.png
 	width 3cm
 
 \end_inset
@@ -618,14 +618,8 @@ status open
 \end_inset
 
 
-\begin_inset Info
-type  "lyxrc"
-arg   "user_email"
-\end_inset
-
-
 \begin_inset Graphics
-	filename /home/uri/Downloads/MadaneyHaatid.pdf
+	filename /home/uri/lyx-config/Sources/MadaneyHaatidLogo.png
 	width 3cm
 
 \end_inset

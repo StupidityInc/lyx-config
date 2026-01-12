@@ -1,0 +1,85 @@
+# ===========================
+# 1. LyX & LaTeX Build Junk
+# ===========================
+# Compilation intermediates (Safe to delete, auto-generated)
+*.aux
+*.log
+*.lof
+*.lot
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.dvi
+*.xdv
+*.nav
+*.snm
+*.vrb
+
+# ===========================
+# 2. LyX Backups & Locks
+# ===========================
+# Auto-saves and temporary editing files
+*.lyx~
+*.lyx#
+.#*
+*.bak
+*.tmp
+*.emergency
+
+# ===========================
+# 3. LyX User Directory Internals
+# ===========================
+# Crucial if you point LyX to use your 'config' folder as its home.
+# We don't want to sync the cache or session history.
+**/cache/
+**/session
+*.socket
+*.pipe
+lyxpipe.in
+lyxpipe.out
+
+# ===========================
+# 4. OS & Editor Files (Linux/JetBrains)
+# ===========================
+# Linux / Vim / Nano
+.DS_Store
+*.swp
+*~
+.directory
+
+# JetBrains (IntelliJ / PyCharm) - Since you use them
+.idea/
+*.iml
+*.iws
+
+# VS Code (Just in case)
+.vscode/
+
+# ===========================
+# 5. Python & Projects
+# ===========================
+# Since you have a "Projects" folder
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.env
+.ipynb_checkpoints
+
+# ===========================
+# 6. Generated Output (Optional)
+# ===========================
+# Usually, we don't commit PDFs (we build them from source).
+# If you WANT to save PDFs, put a '#' before *.pdf
+#*.pdf
+
+# Generated graphics from LaTeX conversions
+*.pdf_tex
+*.svg_tex

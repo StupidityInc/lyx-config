@@ -1,0 +1,14 @@
+#
+# COLOR SECTION ###################################
+#
+
+\set_color "cursor" "#d3c6aa" "#d3c6aa"
+\set_color "background" "#2d353b" "#2d353b"
+\set_color "foreground" "#d3c6aa" "#d3c6aa"
+\set_color "selectiontext" "#d3c6aa" "#d3c6aa"
+\set_color "latex" "#e67e80" "#e67e80"
+\set_color "note" "#a7c080" "#a7c080"
+\set_color "comment" "#859289" "#859289"
+\set_color "command" "#d699b6" "#d699b6"
+\set_color "math" "#dbbc7f" "#dbbc7f"
+\set_color "mathbg" "#272e33" "#272e33"
